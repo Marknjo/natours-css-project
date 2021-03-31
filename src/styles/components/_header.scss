@@ -26,12 +26,13 @@
   position: absolute;
   top: 40%;
   left: 50%;
+  text-align: center;
   transform: translate(-50%, -50%);
 
   .heading-primary {
     backface-visibility: hidden;
     color: #fff;
-    margin: auto;
+    margin-bottom: 60px;
     text-transform: uppercase;
 
     .heading-primary-main {
@@ -78,6 +79,71 @@
         opacity: 1;
         transform: translateX(0);
       }
+    }
+  }
+  /* 
+  * Header Button
+   */
+  .btn:link,
+  .btn:visited {
+    border-radius: 100px;
+    display: inline-block;
+    padding: 15px 40px;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .btn:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+  }
+
+  .btn:active {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    transform: translateY(-1px);
+  }
+
+  .btn-white {
+    background-color: #fff;
+    color: #777;
+  }
+
+  .btn::after {
+    content: "";
+    display: inline-block;
+    border-radius: 100px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.4s;
+    z-index: -1;
+  }
+
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+
+  .btn-white::after {
+    background-color: #ffffff;
+  }
+
+  .btn-hero {
+    animation: moveInFromBottom 1.25s ease-out 0.75s;
+  }
+
+  @keyframes moveInFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 }
