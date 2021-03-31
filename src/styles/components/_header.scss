@@ -132,7 +132,7 @@
   }
 
   .btn-hero {
-    animation: moveInFromBottom 1.25s ease-out 0.75s;
+    animation: moveInFromBottom 1.25s ease-out 0.75s backwards;
   }
 
   @keyframes moveInFromBottom {
