@@ -12,17 +12,17 @@
   position: relative;
 }
 
-.logo-box {
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 
-  .logo {
+  .header__logo {
     height: 3.5rem;
   }
 }
 
-.text-box {
+.header__text-box {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -35,14 +35,14 @@
     margin-bottom: 6rem;
     text-transform: uppercase;
 
-    .heading-primary-main {
+    .heading-primary--main {
       display: block;
       font-size: 6rem;
       font-weight: 700;
       letter-spacing: 3.5rem;
       animation: moveInLeft 1s ease-out;
     }
-    .heading-primary-sub {
+    .heading-primary--sub {
       display: block;
       font-size: 2rem;
       font-weight: 400;
@@ -104,7 +104,7 @@
     transform: translateY(-0.1rem);
   }
 
-  .btn-white {
+  .btn--white {
     background-color: #fff;
     color: #777;
   }
@@ -127,11 +127,11 @@
     opacity: 0;
   }
 
-  .btn-white::after {
+  .btn--white::after {
     background-color: #ffffff;
   }
 
-  .btn-hero {
+  .header__btn {
     animation: moveInFromBottom 1.25s ease-out 0.75s backwards;
   }
 
