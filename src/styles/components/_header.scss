@@ -14,11 +14,11 @@
 
 .logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
 
   .logo {
-    height: 35px;
+    height: 3.5rem;
   }
 }
 
@@ -32,32 +32,32 @@
   .heading-primary {
     backface-visibility: hidden;
     color: #fff;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
     text-transform: uppercase;
 
     .heading-primary-main {
       display: block;
-      font-size: 60px;
+      font-size: 6rem;
       font-weight: 700;
-      letter-spacing: 35px;
+      letter-spacing: 3.5rem;
       animation: moveInLeft 1s ease-out;
     }
     .heading-primary-sub {
       display: block;
-      font-size: 20px;
+      font-size: 2rem;
       font-weight: 400;
-      letter-spacing: 17.5px;
+      letter-spacing: 1.75rem;
       animation: moveInRight 1s ease-out;
     }
 
     @keyframes moveInLeft {
       0% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-10rem);
       }
 
       80% {
-        transform: translateX(10px);
+        transform: translateX(1rem);
       }
 
       100% {
@@ -68,11 +68,11 @@
     @keyframes moveInRight {
       0% {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(10rem);
       }
 
       80% {
-        transform: translateX(-10px);
+        transform: translateX(-1rem);
       }
 
       100% {
@@ -86,22 +86,22 @@
    */
   .btn:link,
   .btn:visited {
-    border-radius: 100px;
+    border-radius: 10rem;
     display: inline-block;
-    padding: 15px 40px;
+    padding: 1.5rem 4rem;
     position: relative;
     text-transform: uppercase;
     text-decoration: none;
     transition: all 0.2s;
   }
   .btn:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-0.3rem);
   }
 
   .btn:active {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+    transform: translateY(-0.1rem);
   }
 
   .btn-white {
@@ -112,7 +112,7 @@
   .btn::after {
     content: "";
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 10rem;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -138,7 +138,7 @@
   @keyframes moveInFromBottom {
     0% {
       opacity: 0;
-      transform: translateY(30px);
+      transform: translateY(3rem);
     }
 
     100% {
