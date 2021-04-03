@@ -1,3 +1,19 @@
+//Abstract
 @import "./abstract/variables";
-@import "./base/common";
-@import "./components/hero";
+@import "./abstract/mixins";
+@import "./abstract/function";
+
+//base
+@import "./base/base";
+@import "./base/typography";
+@import "./base/animations";
+@import "./base/utilities";
+
+//components
+@import "./components/button";
+
+//layouts
+@import "./layouts/hero";
+
+//pages
+@import "./pages/home";
