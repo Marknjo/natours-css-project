@@ -60,11 +60,11 @@
     }
 
     &--2 {
-      background-image: url(../assets/images/nat-5.jpg);
+      background-image: url(../assets/images/nat-6.jpg);
     }
 
     &--3 {
-      background-image: url(../assets/images/nat-5.jpg);
+      background-image: url(../assets/images/nat-7.jpg);
     }
   }
 
@@ -112,5 +112,31 @@
         }
       }
     }
+  }
+
+  //Back Side: Card
+
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+  }
+
+  &__price-box {
+    color: $color-white;
+    margin-bottom: 8rem;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
   }
 }
