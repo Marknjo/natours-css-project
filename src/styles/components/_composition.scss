@@ -27,6 +27,7 @@
       transform: scale(1.05) translateY(0.5rem);
       outline: 1.5rem solid $color-primary-main;
       z-index: 5;
+      cursor: pointer;
     }
 
     &--1 {
