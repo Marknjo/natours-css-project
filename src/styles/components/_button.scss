@@ -51,6 +51,19 @@
     }
   }
 
+  &--green {
+    background-color: $color-primary-main;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary-main;
+    }
+  }
+
+  &--medium-font {
+    font-size: 1.4rem;
+  }
+
   &__header {
     animation: moveInFromBottom 1.25s ease-out 0.75s backwards;
   }
