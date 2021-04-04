@@ -8,6 +8,20 @@ body {
 
 .section-about {
   background-color: $color-grey-light-1;
-  padding-top: calc(20vh + 8rem);
+  padding: 20rem 2.5rem;
   margin-top: -20vh;
+}
+
+/**
+** Features Section
+**/
+.features-section {
+  padding: 20rem 2.5rem;
+  @include sectionWithImageBg("../assets/images/nat-4.jpg");
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+
+  & > * {
+    transform: skewY(7deg);
+  }
 }

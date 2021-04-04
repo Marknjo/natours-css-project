@@ -41,16 +41,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 3.5rem;
-  background-image: linear-gradient(
-    to right,
-    $color-primary-light,
-    $color-primary-dark
-  );
-
-  background-clip: text;
-  -webkit-background-clip: text;
-  display: inline-block;
-  color: transparent;
+  @include textClipGradient;
   transition: all 0.2s;
 
   &:hover {

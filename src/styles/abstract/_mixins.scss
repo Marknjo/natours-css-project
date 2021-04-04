@@ -6,3 +6,26 @@
     display: table;
   }
 }
+
+@mixin sectionWithImageBg($url) {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(126, 213, 111, 0.8),
+      rgba(40, 180, 131, 0.8)
+    ),
+    url($url);
+  background-size: cover;
+  background-position: top;
+}
+
+@mixin textClipGradient {
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
