@@ -3,6 +3,7 @@
 */
 
 .btn {
+  &,
   &:link,
   &:visited {
     border-radius: 10rem;
@@ -12,6 +13,11 @@
     text-transform: uppercase;
     text-decoration: none;
     transition: all 0.2s;
+
+    //button elements
+    border: none;
+    outline: none;
+    cursor: pointer;
   }
 
   &:hover {
@@ -24,7 +30,8 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
     transform: translateY(-0.1rem);
   }
