@@ -185,7 +185,7 @@
       </section>
 
       <!-- Tours Section -->
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most Popular Tours</h2>
         </div>
@@ -215,7 +215,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="" class="btn btn--medium-font btn--white"
+                  <a href="#popup" class="btn btn--medium-font btn--white"
                     >Book Now</a
                   >
                 </div>
@@ -247,7 +247,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$497</p>
                   </div>
-                  <a href="" class="btn btn--white &--medium-font">Book Now</a>
+                  <a href="#popup" class="btn btn--white &--medium-font">Book Now</a>
                 </div>
               </div>
             </div>
@@ -277,7 +277,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$897</p>
                   </div>
-                  <a href="" class="btn btn--white &--medium-font">Book Now</a>
+                  <a href="#popup" class="btn btn--white &--medium-font">Book Now</a>
                 </div>
               </div>
             </div>
@@ -358,7 +358,7 @@
       </section>
 
       <!-- Booking Section -->
-      <section class="section-book">
+      <section class="section-book" >
         <div class="row u-padding-right-left-medium">
           <div class="book">
             <div class="book__form">
@@ -479,5 +479,50 @@
         </div>
       </div>
     </footer>
+
+    <!-- Booking popup -->
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <!-- Images -->
+        <div class="popup__left">
+          <img
+            src="./assets/images/nat-8.jpg"
+            alt="Tour Photo 1"
+            class="popup__img"
+          />
+          <img
+            src="./assets/images/nat-9.jpg"
+            alt="JTour Photo 2"
+            class="popup__img"
+          />
+        </div>
+
+        <!-- Text -->
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">
+            &times;
+          </a>
+          <div class="u-margin-bottom-small">
+            <h2 class="heading-secondary u-margin-bottom-small">
+              Start Booking Now
+            </h2>
+            <h3 class="heading-tertiary">
+              Important: Please read the terms and conditions first
+            </h3>
+          </div>
+          <div class="popup__text u-margin-bottom-medium u-font-medium">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quidem debitis aliquam temporibus recusandae sit nostrum consequuntur dicta sint molestiae dolorum, enim numquam, unde modi! Saepe alias cupiditate reprehenderit culpa sequi, impedit, error consequuntur commodi ipsum corporis velit perspiciatis numquam laboriosam expedita soluta inventore vero?
+
+          </div>
+          <a href="#" class="btn btn--green ">Book Now</a>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="popup">
+      <div class="popup__content">
+      </div> 
+    </div>-->
   </body>
 </html>
