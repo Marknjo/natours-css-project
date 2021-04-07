@@ -15,11 +15,6 @@
     visibility: visible;
   }
 
-  &:target:active {
-    opacity: 0;
-    visibility: hidden;
-  }
-
   &__content {
     width: 75%;
     background-color: $color-white;
@@ -57,5 +52,30 @@
     column-gap: 4rem;
     column-rule: 1px solid $color-grey-light-2;
     hyphens: auto;
+  }
+
+  //popup close button
+  &:target &__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &__close {
+    &:link,
+    &:visited {
+      position: absolute;
+      top: 2.5rem;
+      right: 2.5rem;
+      color: $color-grey-dark;
+      text-decoration: none;
+      font-size: 3rem;
+      display: inline-block;
+      line-height: 1;
+      transition: all 0.2s;
+    }
+
+    &:hover {
+      color: $color-primary-dark;
+    }
   }
 }
