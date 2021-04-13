@@ -8,6 +8,20 @@
 html {
   //Base sizing
   font-size: 62.5%;
+
+  //Desktop large
+  @include respond(tab-land) {
+    font-size: 75%; //12px
+  }
+  //Tablet landscape
+  @include respond(tab-land) {
+    font-size: 56.25%; //9px
+  }
+
+  //Tablet portlait
+  @include respond(tab-pot) {
+    font-size: 50%; //8px
+  }
 }
 body {
   padding: 3rem;

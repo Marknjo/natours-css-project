@@ -33,3 +33,49 @@
 @mixin paddingSections {
   padding: 20rem 2.5rem;
 }
+
+/**
+** 
+**
+** Media Querries Manager
+**
+** Max-width 600px   - Phones
+** Max-width 900px   - Tablet Potrait
+** Max-width 1200px  - Tablet landscape
+** [1200px - 1800px] - Normal Desktop
+** Min-width 1800px  - Large Desktop
+**
+**
+** Variable names: $breakpoint
+** - phones
+** - tab-pot
+** - tab-land
+** - desktop-large
+**
+**/
+
+@mixin respond($breakpoint) {
+  @if ($breakpoint == phone) {
+    @media (max-width: 37.5em) {
+      @content;
+    } //600px/16px
+  }
+
+  @if ($breakpoint == tab-pot) {
+    @media (max-width: 56.25em) {
+      @content;
+    } //900px/16px
+  }
+
+  @if ($breakpoint == tab-land) {
+    @media (max-width: 75em) {
+      @content;
+    } //1200px/16px
+  }
+
+  @if ($breakpoint == desktop-large) {
+    @media (min-width: 112.5em) {
+      @content;
+    } //1800px/16px
+  }
+}
