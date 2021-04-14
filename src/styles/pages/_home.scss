@@ -1,7 +1,3 @@
-body {
-  padding: $default-font-size;
-}
-
 /**
 ** About Section
 **/
@@ -10,6 +6,10 @@ body {
   background-color: $color-grey-light-1;
   @include paddingSections;
   margin-top: -20vh;
+
+  @include respond(tab-pot) {
+    padding-top: 20vh;
+  }
 }
 
 /**
@@ -24,6 +24,11 @@ body {
   & > * {
     transform: skewY(7deg);
   }
+
+  @include respond(tab-pot) {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
 }
 
 /**
@@ -34,6 +39,10 @@ body {
   @include paddingSections;
   padding-bottom: 10rem;
   margin-top: -10rem;
+
+  @include respond(tab-pot) {
+    padding-bottom: 8rem;
+  }
 }
 
 /**
@@ -43,6 +52,10 @@ body {
 .section-stories {
   position: relative;
   padding: 10rem 0;
+
+  @include respond(tab-pot) {
+    padding: 5rem 0;
+  }
 }
 
 /**
@@ -56,6 +69,10 @@ body {
     $color-primary-dark
   );
   padding: 10rem 0;
+
+  @include respond(tab-pot) {
+    padding: 5rem 0;
+  }
 }
 
 .book {

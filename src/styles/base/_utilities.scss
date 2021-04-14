@@ -5,9 +5,15 @@
 //Margin
 .u-margin-bottom-big {
   margin-bottom: 8rem !important;
+  @include respond(tab-pot) {
+    margin-bottom: 5rem !important;
+  }
 }
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important;
+  @include respond(tab-pot) {
+    margin-bottom: 2.5rem !important;
+  }
 }
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important;
@@ -15,17 +21,29 @@
 
 .u-margin-top-big {
   margin-top: 10rem !important;
+  @include respond(tab-pot) {
+    margin-top: 6.5rem !important;
+  }
 }
 .u-margin-top-huge {
   margin-top: 10rem !important;
+  @include respond(tab-pot) {
+    margin-top: 6.5rem !important;
+  }
 }
 
 //Padding
 .u-padding-bottom-big {
   padding-bottom: 8rem !important;
+  @include respond(tab-pot) {
+    padding-bottom: 5rem !important;
+  }
 }
 .u-padding-bottom-medium {
   padding-bottom: 4rem !important;
+  @include respond(tab-pot) {
+    padding-bottom: 3rem !important;
+  }
 }
 .u-padding-bottom-small {
   padding-bottom: 1.5rem !important;
@@ -33,12 +51,18 @@
 
 .u-padding-small {
   padding: 10rem !important;
+  @include respond(tab-pot) {
+    padding: 6.5rem !important;
+  }
 }
 .u-padding-medium {
   padding: 2.5rem !important;
 }
 .u-padding-large {
   padding: 4rem !important;
+  @include respond(tab-pot) {
+    padding: 3rem !important;
+  }
 }
 
 .u-padding-right-left-medium {
@@ -49,6 +73,10 @@
 .u-padding-top-bottom-huge {
   padding-top: 10rem !important;
   padding-bottom: 10rem !important;
+  @include respond(tab-pot) {
+    padding-top: 6.5rem !important;
+    padding-bottom: 6.5rem !important;
+  }
 }
 
 .u-text-upper {

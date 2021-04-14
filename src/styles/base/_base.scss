@@ -27,10 +27,10 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 3rem !important;
+  padding: 3rem;
 
   //Tablet portlait
   @include respond(tab-pot) {
-    padding: 0 !important;
+    padding: 0;
   }
 }

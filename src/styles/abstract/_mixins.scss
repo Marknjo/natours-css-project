@@ -32,6 +32,10 @@
 
 @mixin paddingSections {
   padding: 20rem 2.5rem;
+
+  @include respond(tab-pot) {
+    padding: 15rem 2.5rem;
+  }
 }
 
 /**
