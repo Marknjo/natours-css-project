@@ -3,6 +3,10 @@
   margin: 0 auto;
   @include clear-fix;
 
+  @include respond(tab-pot) {
+    max-width: $grid-width-small;
+  }
+
   &:not(:last-child) {
     margin-bottom: $gutter-verticle;
   }
@@ -11,6 +15,15 @@
     float: left;
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include respond(tab-pot) {
+        margin-right: 0;
+        margin-bottom: $gutter-verticle-small;
+      }
+    }
+
+    @include respond(tab-pot) {
+      width: 100% !important;
     }
   }
 
