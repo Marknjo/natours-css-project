@@ -17,10 +17,19 @@
     border-top: 1px solid rgba($color-grey-light-1, 0.25);
     padding: 1.5rem 0;
     display: inline-block;
+    @include respond(tab-pot) {
+      text-align: center;
+      margin: 0 auto;
+    }
   }
 
   &__nav {
     list-style: none;
+
+    @include respond(tab-pot) {
+      display: block;
+      margin: 0 auto;
+    }
   }
 
   &__list-item {
@@ -47,5 +56,11 @@
   &__copyright {
     width: 80%;
     float: right;
+    @include respond(tab-pot) {
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+      float: none;
+    }
   }
 }
