@@ -12,13 +12,17 @@
     transform: scale(0.925);
   }
 
+  @include respond(tab-pot) {
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+  }
+
   &__photo {
     display: block;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
     border-radius: 2px;
     width: 55%;
     height: auto;
-    position: relative;
     transition: all 0.2s;
     outline-offset: 1rem;
 
@@ -30,12 +34,32 @@
       cursor: pointer;
     }
 
+    @include respond(tab-pot) {
+      width: 50%;
+      height: auto;
+    }
+
+    @include respond(tab-pot) {
+      width: 40%;
+      height: auto;
+    }
+
     &--1 {
       grid-row: 1 / 2;
       grid-column: 1/2;
       z-index: 1;
       margin-top: -8rem;
       margin-left: -17rem;
+
+      @include respond(tab-pot) {
+        margin-top: 0;
+        margin-left: -35rem;
+      }
+
+      @include respond(phone) {
+        margin-top: 0;
+        margin-left: -20rem;
+      }
     }
 
     &--2 {
@@ -44,6 +68,16 @@
       z-index: 2;
       margin-bottom: 1rem;
       margin-right: -20rem;
+
+      @include respond(tab-pot) {
+        margin-bottom: 0;
+        margin-right: -35rem;
+      }
+
+      @include respond(phone) {
+        margin-bottom: 0;
+        margin-right: -20rem;
+      }
     }
 
     &--3 {
@@ -51,6 +85,10 @@
       grid-column: 1/2;
       z-index: 3;
       margin-top: 10rem;
+
+      @include respond(tab-pot) {
+        margin-top: -2rem;
+      }
     }
   }
 }
