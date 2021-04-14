@@ -26,18 +26,32 @@
     border-radius: 3px;
     display: table;
     overflow: hidden;
-
     transition: all 0.5s 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    @include respond(tab-land) {
+      display: block;
+    }
   }
 
   &__left {
     width: 33.3333333%;
     display: table-cell;
+    @include respond(tab-land) {
+      display: block;
+      width: 100%;
+      @include clear-fix;
+    }
   }
 
   &__img {
     display: block;
     width: 100%;
+
+    @include respond(tab-land) {
+      display: inline-block;
+      width: 50%;
+      float: right;
+    }
   }
 
   &__right {
@@ -45,6 +59,12 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 3.5rem;
+
+    @include respond(tab-land) {
+      display: block;
+      width: 100%;
+      padding: 6rem 2.5rem;
+    }
   }
 
   &__text {
@@ -52,6 +72,15 @@
     column-gap: 4rem;
     column-rule: 1px solid $color-grey-light-2;
     hyphens: auto;
+
+    @include respond(tab-land) {
+      margin: 0 0 4rem 0;
+    }
+
+    @include respond(phone) {
+      column-count: 1;
+      column-gap: 0;
+    }
   }
 
   //popup close button

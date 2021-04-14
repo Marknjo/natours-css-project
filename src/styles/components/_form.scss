@@ -14,8 +14,12 @@
     border-bottom: 3px solid transparent;
     outline: none;
     display: block;
-    width: 90%;
+    width: 75%;
     transition: all 0.3s;
+
+    @include respond(tab-land) {
+      width: 62%;
+    }
 
     @include respond(tab-pot) {
       width: 100%;

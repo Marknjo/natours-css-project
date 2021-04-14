@@ -67,7 +67,6 @@ body {
 
   @include respond(tab-pot) {
     font-size: 3rem;
-    padding: 0 2.5rem;
   }
 
   @include respond(phone) {
