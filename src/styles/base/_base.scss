@@ -5,12 +5,13 @@
   padding: 0;
   box-sizing: inherit;
 }
+
 html {
   //Base sizing
   font-size: 62.5%;
 
   //Desktop large
-  @include respond(tab-land) {
+  @include respond(desktop-large) {
     font-size: 75%; //12px
   }
   //Tablet landscape
@@ -23,6 +24,13 @@ html {
     font-size: 50%; //8px
   }
 }
+
 body {
-  padding: 3rem;
+  box-sizing: border-box;
+  padding: 3rem !important;
+
+  //Tablet portlait
+  @include respond(tab-pot) {
+    padding: 0 !important;
+  }
 }
