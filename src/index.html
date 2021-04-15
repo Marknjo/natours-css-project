@@ -434,17 +434,22 @@
       class="footer u-padding-top-bottom-huge u-padding-right-left-medium"
     >
       <div class="footer__logo-box u-margin-bottom-big">
-        <img
-          src="./assets/images/logo-green-small-1x.png"
+        <picture class="footer__logo">
+          <source media="(max-width: 37.5rem)" 
+          srcset="
+          ./assets/images/logo-green-small-2x.png 2x, 
+          ./assets/images/logo-green-small-1x.png 1x
+          ">
+
+          <img
+          src="./assets/images/logo-green-small-2x.png"
           alt="Logo"
           srcset="
-            ./assets/images/logo-green-1x.png,
-            /assets/images/logo-green-2x.png
+            ./assets/images/logo-green-1x.png 1x,
+            /assets/images/logo-green-2x.png 2x
           "
-          class="footer__logo"
-          width="150"
-          height="119"
         />
+        </picture>
       </div>
       <div class="row">
         <div class="col-1-of-2">
