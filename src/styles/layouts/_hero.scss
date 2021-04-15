@@ -4,12 +4,17 @@
 
 .header {
   height: 95vh;
-  @include sectionWithImageBg("../assets/images/hero.jpg");
+  @include sectionWithImageBg("../assets/images/hero-small.jpg");
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
 
   @include respond(phone) {
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5rem),
+    (min-width: 125rem) {
+    @include sectionWithImageBg("../assets/images/hero.jpg");
   }
 
   &__logo-box {
