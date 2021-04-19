@@ -183,7 +183,7 @@
   }
 
   //Media querries
-  @include respond(tab-pot) {
+  @include respond(tab-pot-mobile) {
     height: auto;
     border-radius: 3px;
     background-color: $color-white;

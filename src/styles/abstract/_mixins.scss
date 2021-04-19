@@ -82,4 +82,10 @@
       @content;
     } //1800px/16px
   }
+
+  @if ($breakpoint == tab-pot-mobile) {
+    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+      @content;
+    } //900px/16px
+  }
 }
